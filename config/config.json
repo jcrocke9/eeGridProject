@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/eeGrid/EeGridWebPart.js",
+      "manifest": "./src/webparts/eeGrid/EeGridWebPart.manifest.json",
+      "outputPath": "./dist/ee-grid-web-part.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "EeGridWebPartStrings": "webparts/eeGrid/loc/{locale}.js"
+  }
+}

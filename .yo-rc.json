@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "onprem",
+    "version": "1.7.1",
+    "libraryName": "ee-grid-project",
+    "libraryId": "74d126bc-f66f-47e5-877b-06180eb017ad",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

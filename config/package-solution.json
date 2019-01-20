@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ee-grid-project-client-side-solution",
+    "id": "74d126bc-f66f-47e5-877b-06180eb017ad",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/ee-grid-project.sppkg"
+  }
+}
