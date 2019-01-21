@@ -4,7 +4,7 @@ import { IEeGridProps } from './IEeGridProps';
 import { escape } from '@microsoft/sp-lodash-subset';
 import { BaseComponent } from 'office-ui-fabric-react/lib/Utilities';
 import { DefaultButton } from '@microsoft/sp-webpart-base/node_modules/office-ui-fabric-react/lib/Button';
-import { IDetailsList, DetailsList, IColumn, IGroup, IGroupedListProps, CheckboxVisibility, IDetailsGroupRenderProps, SelectionMode } from 'office-ui-fabric-react/lib/DetailsList';
+import { IDetailsList, IDetailsListProps, DetailsList, IColumn, IGroup, IGroupedListProps, CheckboxVisibility, IDetailsGroupRenderProps, SelectionMode, ConstrainMode } from 'office-ui-fabric-react/lib/DetailsList';
 import { Toggle, IToggleStyles } from 'office-ui-fabric-react/lib/Toggle';
 import { mergeStyles } from 'office-ui-fabric-react/lib/Styling';
 
@@ -71,8 +71,9 @@ export default class EeGrid extends React.Component<IEeGridProps, IDetailsListGr
 
   public render() {
     const { items, groups } = this.state;
+    //  data-is-scrollable="true"
     return (
-      <div data-is-scrollable="true">
+      <div>
         <DetailsList
           items={items}
           groups={groups}
@@ -81,6 +82,7 @@ export default class EeGrid extends React.Component<IEeGridProps, IDetailsListGr
           selectionMode={SelectionMode.none}
           ariaLabelForSelectAllCheckbox="Toggle selection for all items"
           ariaLabelForSelectionColumn="Toggle selection"
+          constrainMode={ConstrainMode.unconstrained}
           groupProps={{
             showEmptyGroups: true,
             getGroupItemLimit: this.getGroupItemLimit
