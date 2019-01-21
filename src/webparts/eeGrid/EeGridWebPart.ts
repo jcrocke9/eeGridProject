@@ -21,7 +21,7 @@ export default class EeGridWebPart extends BaseClientSideWebPart<IEeGridWebPartP
     const element: React.ReactElement<IEeGridProps > = React.createElement(
       EeGrid,
       {
-        description: this.properties.description
+        
       }
     );
 

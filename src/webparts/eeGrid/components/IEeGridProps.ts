@@ -1,3 +1,3 @@
 export interface IEeGridProps {
-  description: string;
+  description?: string;
 }
